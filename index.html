@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Enthusiasts Survey</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?ai,technology') no-repeat center center/cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #ff4757;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e84118;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>AI Enthusiasts Survey</h2>
+        <p>Tell us what you think about AI!</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="ai-usage">How often do you use AI tools?</label>
+            <select id="ai-usage">
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Rarely</option>
+                <option>Never</option>
+            </select>
+            
+            <label for="ai-fear">Are you afraid AI will take over the world? 🤖</label>
+            <select id="ai-fear">
+                <option>Yes! It's scary 😱</option>
+                <option>No, it's just a tool 🛠</option>
+                <option>Maybe, but I trust the scientists 🤔</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
