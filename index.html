@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my AI Blog post!!!</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('AI_image1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: grey;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #00FFFF;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00FFFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #e53e3e;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my blog post on <b>"Modern world of AI"</b></h1>
+        <p>“AI will not make us obsolete, but it will make us superhuman.” – Max Tegmark</p>
+        <a href="#" class="btn">Learn More</a>
+        <script>
+            window.onload = function() {
+            let userResponse = confirm("Accepting Terms of Use, Terms and Conditions, or other legal agreements");
+            if (!userResponse) {
+                window.location.href = "https://example.com";
+            } else {
+                window.location.href = "https://example.com"; // Replace with your URL
+            }
+        };
+    </script>
+
+    </div>
+</body>
+</html>
