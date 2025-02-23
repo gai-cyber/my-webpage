@@ -23,6 +23,38 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        .container {
+            background: grey;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00FFFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #e53e3e;
+        }
         header h1 {
             margin: 0;
             font-size: 3rem;
@@ -109,7 +141,7 @@
 </head>
 <body>
     <header>
-        <h1>Famous Blog</h1>
+        <h1>Modern world of AI</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -119,10 +151,33 @@
             </ul>
         </nav>
     </header>
+    <div class="container">
+        <h1>Welcome to my blog post on <b>"Modern world of AI"</b></h1>
+        <p>“AI will not make us obsolete, but it will make us superhuman.” – Max Tegmark</p>
+        <a href="#" class="btn">Learn More</a>
+        <script>
+            window.onload = function() {
+            let hasRedirected = sessionStorage.getItem("hasRedirected"); // Check if already redirected
+            let redirectUrl = "https://www.google.ca/books/edition/Linux_Basics_for_Hackers/P1v6DwAAQBAJ?hl=en&gbpv=1&printsec=frontcover"; // The URL to redirect to
 
+            // Keep the confirmation pop-up
+            let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
+
+            // Only proceed if user clicks "OK" and has not been redirected before
+           if (!hasRedirected && userResponse) {
+              sessionStorage.setItem("hasRedirected", true); // Set flag so redirection happens only once
+              window.location.href = redirectUrl; // Redirect to the desired URL
+              console.log("Redirection successful, stopping further execution.");
+           } else if (!userResponse) {
+                console.log("User declined the terms.");
+           } else {
+                console.log("Already redirected, stopping execution.");
+           }
+        };
+        </script>
     <div class="content">
         <div class="article">
-            <h2>Welcome to Famous Blog</h2>
+            <h2>Welcome to my Blog</h2>
             <p>This blog brings you the latest articles on technology, lifestyle, and personal growth. Our carefully curated content is designed to inspire and inform you.</p>
             <a class="read-more" href="#">Read More</a>
         </div>
@@ -134,14 +189,14 @@
         </div>
 
         <div class="article">
-            <h2>Popular Article: 10 Tips for Healthy Living</h2>
-            <p>Explore our guide to healthy living and discover practical tips on maintaining a balanced lifestyle. From nutrition to mindfulness, this article covers it all.</p>
+            <h2>Popular Article: 10 Tips to surpass the fear of AI</h2>
+            <p>Explore our guide to healthy living and discover practical tips on maintaining a balanced lifestyle. </p>
             <a class="read-more" href="#">Read More</a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Famous Blog. All rights reserved.</p>
+        <p>&copy; 2025 Modern world of AI. All rights reserved.</p>
     </footer>
 </body>
 </html>
