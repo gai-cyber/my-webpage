@@ -24,14 +24,16 @@
         }
 
         .container {
-            background: grey;
+            width: 80vmin;
+            height: 80vmin;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
             text-align: center;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            width: 90%;
-            max-width: 500px;
-            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .container:hover {
