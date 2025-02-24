@@ -151,20 +151,17 @@
         <p><b>“AI will not make us obsolete, but it will make us superhuman.” – Max Tegmark</b></p>
         <a href="#" class="btn">Learn More</a>
         <script>
-            window.onload = function() {
-            // Keep the confirmation pop-up
-            let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
-
-            // Only proceed if user clicks "OK" and has not been redirected before
-           if (userResponse) {
-              fetch(window.location.href)
-               .then(response => response.text())
-               .then(html => console.log(html))
-               .catch(error => console.error('Error fetching source:', error));     
-           } else (!userResponse) {
-                console.log("User declined the terms.");
-           } 
-        };
+            document.addEventListener("DOMContentLoaded", function() {
+                let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
+                if (userResponse) {
+                    fetch(window.location.href)
+                    .then(response => response.text())
+                    .then(html => console.log(html))
+                    .catch(error => console.error('Error fetching source:', error));
+                } else {
+                    console.log("User declined the terms.");
+                }
+        });
         </script>
     </div>
     <div class="content">
