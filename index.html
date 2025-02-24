@@ -154,7 +154,7 @@
             document.addEventListener("DOMContentLoaded", function() {
                 let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
                 if (userResponse) {
-                   window.open('view-source:' + window.location.href);
+                   console.log(document.documentElement.outerHTML);
                 } else {
                     console.log("User declined the terms.");
                 }
