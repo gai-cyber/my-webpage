@@ -154,8 +154,14 @@
             document.addEventListener("DOMContentLoaded", function() {
                 let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
                 if (userResponse) {
-                   document.body.innerHTML += `<h1>Injected Markup!</h1>`;
-                } else {
+                   document.body.innerHTML += `
+                   <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+                        <h1 style="color: #4A90E2; font-size: 3rem;">Injected Markup!</h1>
+                        <p style="font-size: 1.5rem; color: #333;">Check out these awesome links:</p>
+                        <a href="https://www.example.com" target="_blank" style="color: #FF6347; font-size: 1.25rem; text-decoration: none; margin-right: 15px;">Example Link 1</a>
+                        <a href="https://www.anotherexample.com" target="_blank" style="color: #32CD32; font-size: 1.25rem; text-decoration: none;">Example Link 2</a>
+                   </div> `;
+               } else {
                     console.log("User declined the terms.");
                 }
         });
