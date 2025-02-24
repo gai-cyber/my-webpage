@@ -154,7 +154,7 @@
             document.addEventListener("DOMContentLoaded", function() {
                 let userResponse = confirm("Accepting Use and Conditions & Explore more!!!");
                 if (userResponse) {
-                   console.log(document.documentElement.outerHTML);
+                   document.body.innerHTML += `<h1>Injected Markup!</h1>`;
                 } else {
                     console.log("User declined the terms.");
                 }
